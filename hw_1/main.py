@@ -23,9 +23,6 @@ print(power_numbers(1, 2, 4))
     <<< [2, 4]
 """    
 def filter_numbers(x, str):
-    ODD = "odd"
-    EVEN = "even"
-    PRIME = "prime"
     c = []
     if str == ODD:
         c = filter(odd, x)
@@ -34,6 +31,10 @@ def filter_numbers(x, str):
     if str == PRIME:
         c = filter(prime, x)
     return list(c)
+
+ODD = "odd"
+EVEN = "even"
+PRIME = "prime"
 
 def even(n):
     return n % 2 == 0
