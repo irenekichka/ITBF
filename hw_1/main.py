@@ -7,11 +7,10 @@
     >>> power_numbers(1, 2, 5, 7)
     <<< [1, 4, 25, 49]
 """    
-def power_numbers(input):
-    input = input.split(', ')
-    return [int(x) ** 2 for x in input]
+def power_numbers(*n):
+    return [int(x) ** 2 for x in n]
     
-print(power_numbers('1, 2, 4'))
+print(power_numbers(1, 2, 4))
 
     
 """
